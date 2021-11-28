@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "TFindJob";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="contact" class="contact">
+
+    <div class="section-title pt-5">
+        <h2>FIND A EMPLOYEE</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>SKILL / Designation</strong> </label>
+                            <input type="text" name="name" class="form-control" id="name" required="" placeholder='Keyskills, Designation'>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>DESIRED LOCATION</strong></label>
+                            <input type="" class="form-control" name="location" id="location" required="" placeholder="Enter location">
+                        </div>
+                    </div>
+                    
+
+                    <div><button type="submit">SEARCH</a> </button></div>
+                </form>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</section>
