@@ -1,0 +1,187 @@
+﻿@{
+    ViewBag.Title = "Insurance";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+
+ <!-- ======= hero section ======= -->
+
+<section id="hero" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <h1>Everything You Know About Insurance</h1>
+                <h2>Instant everything. Incredible prices. Big heart. </h2>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+                <img src="~/Assets/img/hero-img.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- ======= End of hero section ======= -->
+
+
+ <!-- ======= Offers section ======= -->
+<section>
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Incredible Prices. Monthly Subscription. Bundle Discounts.</h2>
+            <P>Our smartest InsurTech platform helps you easily compare quotes from the most trusted insurers and all year support</P>
+        </div>
+    </div>
+
+    <section id="slider">
+        <div class="container">            
+            <div class="slider">
+                <div class="owl-carousel">
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img class="offers-img" src="~/Assets/img/life.png" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Life Insurance</b></h5>
+                        <p class="text-center p-1">Compare and Buy the most comprehensive life insurance plan at the best rate possibly for a secure future.</p>
+                        <div class="button text-center p-2">
+                            <a href="#" class="btn text-white">Book Now</a>
+                        </div>                       
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img class="offers-img" src="~/Assets/img/health.png" alt=" ">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Health Insurance</b></h5>
+                        <p class="text-center p-1">Access wide range of hospitals and get the best treatment without worrying about bills. Compare affordable and custome health insurance plan for you.</p>
+                        <div class="button text-center p-2">
+                            <a href="#" class="btn text-white">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img class="offers-img" src="~/Assets/img/home.png" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Home Insurance</b></h5>
+                        <p class="text-center p-1">Home insurance provides coverage for your home and personal belongings whether you own a home or live as a tenant.</p>
+                        <div class="button text-center p-2">
+                            <a href="#" class="btn text-white">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img class="offers-img" src="~/Assets/img/car.png" alt="">
+                        </div>
+                        <h5 class="mb-0 text-center"><b>Car Insurance</b></h5>
+                        <p class="text-center p-1">Car insurance is the best care anyone can give to his car. Compare the widest coverage and affordable plans to take informed decisions</p>
+                        <div class="button text-center p-2">
+                            <a href="#" class="btn text-white">Book Now</a>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= Javascript ======= -->
+    <script src=" https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>       
+        // Owlcarousel
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                center: true,
+                navText: [
+                     ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- ======= End of Javascript ======= -->
+
+    <!-- ======= Css ======= -->
+    <style>
+        .btn {        
+            width: 70%;
+            height:40%;
+            background: #47b2e4;  
+            border-radius: 50px;
+        }
+
+            .btn:hover {
+                background: #209dd8;
+            }
+        .offers-img{
+            width: 200px;
+            height: 175px;
+        }
+       
+
+        body {
+            font-family: 'Noto Sans HK', sans-serif;
+            background: #fff;
+        }
+
+        .slider {
+         
+            position: relative;
+        }
+
+            .slider .owl-item.active.center .slider-card {
+                transform: scale(1.15);
+                opacity: 1;
+                background: #ff9966; /* fallback for old browsers */
+                background: -webkit-linear-gradient(to bottom, #47b2e4, white); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to bottom, #47b2e4, white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                color: #fff;
+            }
+
+        .slider-card {
+            width: 70%;
+        
+            background: #fff;
+            padding: 0px 0px;
+            margin: 50px 15px 90px 15px;
+            border-radius: 5px;
+            box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+            transform: scale(0.9);
+            opacity: 0.5;
+            transition: all 0.3s;
+        }
+
+            .slider-card img {
+                border-radius: 5px 5px 0px 0px;
+            }
+        .owl-nav .owl-prev {
+            position: absolute;
+            top: calc(50% - 25px);
+            left: 0;
+            opacity: 1;
+            font-size: 30px !important;
+            z-index: 1;
+        }
+        .owl-nav .owl-next {
+            position: absolute;
+            top: calc(50% - 25px);
+            right: 0;
+            opacity: 1;
+            font-size: 30px !important;
+            z-index: 1;B
+        }
+        <gwmw style="display:none;" > <gwmw style="display:none;" > <gwmw style="display:none;" > <gwmw style="display:none;" > <gwmw style="display:none;" > </gwmw > <gwmw style="display:none;" > </gwmw > </gwmw > <gwmw style="display:none;" >
+    </style>
+    <!-- ======= End of Css ======= -->
+
+    </section>
+
+ <!-- =======End of Offers Section ======= -->
