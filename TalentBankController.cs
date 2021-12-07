@@ -26,5 +26,9 @@ namespace Zabuka.Controllers
         {
             return View();
         }
+        public ActionResult Employees()
+        {
+            return View();
+        }
 	}
 }
