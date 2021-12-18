@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "MoreTraings";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    h1{
+        color:white;
+    }
+    h1 span{
+        color:gray;
+    }
+
+.cards-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(333px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+.card-1{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.container-1{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.container-1:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+.details{
+    padding: 20px 10px;
+}
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+.details>p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+</style>
+<div style="height:100px" ></div>
+
+<div class="section-title">
+    <h2>Online Traing</h2>
+</div>
+
+
+<div class="cards-1">
+    <div class="card-1 card1">
+        <a href="@Url.Action("TraingDetails", "TraingAndDevelopment")">
+            <div class="container-1">
+                <img src="https://s3-us-east-2.amazonaws.com/maryville/wp-content/uploads/2021/04/01092516/whiteboard-training.jpg" alt="las vegas">
+            </div>
+            <div class="details">
+                <h1>Date <span> 6 Dec 2021</span></h1>
+                <h3>Las Vegas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+            </div>
+        </a> 
+    </div>
+    <div class="card-1 card2">
+        <a href="#" >
+            <div class="container-1">
+                <img src="https://s3-us-east-2.amazonaws.com/maryville/wp-content/uploads/2021/04/01092516/whiteboard-training.jpg" alt="New York">
+            </div>
+            <div class="details">
+                <h1>Date <span>6 Dec 2021</span></h1>
+                <h3>New York</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+            </div>
+        </a> 
+    </div>
+    <div class="card-1 card3">
+        <a href="#">
+            <div class="container-1">
+                <img src="https://s3-us-east-2.amazonaws.com/maryville/wp-content/uploads/2021/04/01092516/whiteboard-training.jpg" alt="Singapore">
+            </div>
+            <div class="details">
+                <h1>Date <span>6 Dec 2021</span></h1>
+                <h3>Singapore</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
+            </div>
+        </a> 
+     </div>
+  
+</div>
