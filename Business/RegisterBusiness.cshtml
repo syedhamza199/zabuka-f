@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "RegisterBusiness";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section id="contact" class="contact">
+    <div class="section-title pt-5">
+        <h2>REGISTER YOUR BUSINESS</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Buniess Name</strong> </label>
+                            <input type="text" name="name" class="form-control" id="name" required="" placeholder='Full Name'>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>TagLine</strong> </label>
+                            <input type="text" name="name" class="form-control" id="name" required="" placeholder='Full Name'>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Business Email</strong> </label>
+                            <input type="email" name="name" class="form-control" id="name" required="" placeholder='Email address'>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Contact #</strong> </label>
+                            <input type="text" class="form-control" name="contact" id="subject" required="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Type Of Business</strong> </label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Please Select</option>
+                                <option>Shop/Cafe</option>
+                                <option>Lending</option>
+                                <option>Store</option>
+                                <option>Rentals</option>
+                                <option>Others, please specify below</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Address</strong> </label>
+                            <input type="text" name="name" class="form-control" id="name" required="" placeholder="Location">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Business Details</strong> </label>
+                            <textarea class="form-control" name="message" rows="10" required=""></textarea>
+                        </div>
+
+                    </div>
+                    <div><button type="submit">REGISTER </button></div>
+                </form>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</section>
