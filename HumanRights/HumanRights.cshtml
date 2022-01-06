@@ -1,0 +1,175 @@
+﻿@{
+    ViewBag.Title = "HumanRights";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="pb-5"></div>
+<section id="skills" class="skills pt-5">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                <img src="/Assets/images/social.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+                <h3>Human Rights and Citizen Duties</h3>
+                <p class="fst-italic">
+                    We play role for social, national and international efforts for a better living for all, and to defend, protect Haitian and Haitian friends´interests.Human rights are standards that recognize and protect the dignity of all human beings. Human rights govern how individual human beings live in society and with each other, as well as their relationship with the State and the obligations that the State have towards them.
+                </p>
+
+                <div class="skills-content">
+
+                    <p></p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<div class="section-title p-0">
+    <h2>Donation</h2>
+</div>
+<section id="slider">
+    <div class="container">
+        <div class="slider">
+            <div class="owl-carousel">
+                <div class="slider-card">
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img class="offers-img" src="~/Assets/img/donate.png" alt="">
+                    </div>
+                    <h5 class="mb-0 text-center"><b>SD Pride's youth-led</b></h5>
+                    <p class="text-center p-1">Full Funding for SD Pride's youth-led</p>
+                    <div class="progress">
+                        <div class="progress-bar m-1 rounded" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="sr-only">70% Complete</span>
+                        </div>
+                    </div>
+                    <div class="button text-center p-2">
+                        <a href="DonateNow" class="btn text-white">Donate Now</a>
+                    </div>
+                </div>               
+                <div class="slider-card">
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img class="offers-img" src="~/Assets/img/asad.png" alt="">
+                    </div>
+                    <h5 class="mb-0 text-center"><b>Leadership Academy</b></h5>
+                    <p class="text-center p-1">LGBT Youth Leadership Academy registration</p>
+                    <div class="progress">
+                        <div class="progress-bar m-1 rounded" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="sr-only">70% Complete</span>
+                        </div>
+                    </div>
+                    <div class="button text-center p-2">
+                        <a href="DonateNow" class="btn text-white">Donate Now</a>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img class="offers-img" src="~/Assets/img/donate.png" alt="">
+                    </div>
+                    <h5 class="mb-0 text-center"><b>Lunch / Bunch</b></h5>
+                    <p class="text-center p-1">Lunch Bunch meal for LGBT youth</p>
+                    <div class="progress">
+                        <div class="progress-bar m-1 rounded" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="sr-only">70% Complete</span>
+                        </div>
+                    </div>
+                    <div class="button text-center p-2">
+                        <a href="DonateNow" class="btn text-white">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src=" https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    // Owlcarousel
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            center: true,
+            navText: [
+            ],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    });
+</script>
+<!-- ======= End of Javascript ======= -->
+<!-- ======= Css ======= -->
+<style>
+    .btn {
+        width: 70%;
+        height: 40%;
+        background: #47b2e4;
+        border-radius: 50px;
+    }
+
+        .btn:hover {
+            background: #209dd8;
+        }
+
+    .offers-img {
+        width: 200px;
+        height: 175px;
+    }
+
+
+    body {
+        font-family: 'Noto Sans HK', sans-serif;
+        background: #fff;
+    }
+
+    .slider {
+        position: relative;
+    }
+
+        .slider .owl-item.active.center .slider-card {
+            transform: scale(1.15);
+            opacity: 1;
+            background: #ff9966; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #47b2e4, white); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #47b2e4, white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: #fff;
+        }
+
+    .slider-card {
+        width: 70%;
+        background: #fff;
+        padding: 0px 0px;
+        margin: 50px 15px 90px 15px;
+        border-radius: 5px;
+        box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+        transform: scale(0.9);
+        opacity: 0.5;
+        transition: all 0.3s;
+    }
+
+        .slider-card img {
+            border-radius: 5px 5px 0px 0px;
+        }
+
+    
+    <gwmw style="display:none;" > <gwmw style="display:none;" > <gwmw style="display:none;" > <gwmw style="display:none;" > <gwmw style="display:none;" > </gwmw > <gwmw style="display:none;" > </gwmw > </gwmw > <gwmw style="display:none;" >
+</style>
