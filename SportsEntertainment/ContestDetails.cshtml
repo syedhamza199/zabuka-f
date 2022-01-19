@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "ContestDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .btn {
+        width: auto;
+        height: 40%;
+        background: #47b2e4;
+        border-radius: 50px;
+    }
+
+        .btn:hover {
+            background: #209dd8;
+        }
+        .vote{
+            color: red;
+            border-style: solid;            
+            border-color: red;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+    
+    
+</style>
+
+<div class="pb-5"></div>
+<div class="section-title pt-5">
+    <h2>VOTE A CONTEST</h2>
+</div>  
+<section id="skills" class="skills pt-0">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-center aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                <img src="https://exploredprk.com/wp-content/uploads/2016/11/multi_photo_2016-11-05_dn12087_image5.jpg" class="img-fluid img-responsive" alt="contest-image">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+                <h3>Contest name</h3>
+                <p> [nth] Match, between [Team A] vs [Team B], [venue], [Dated]</p>
+                <h5 class="py-3"> Live Score</h5>
+                <div class="row text-center">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Team A</h5>
+                                <p> Score</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Team A</h5>
+                                <p> Score</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-center my-3 vote">Vote Your favourite Team</h2>
+                <div class="row text-center">
+                    <div class="col-md-2 col-12"></div>
+                    <div class="col-md-4 col-12">
+                    <div class="button  p-2">
+                        <a href="#" class="btn text-white">Team A</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="button  p-2">
+                        <a href="#" class="btn text-white">Team B</a>
+                    </div>
+                </div>
+                    <div class="col-md-2 col-12"></div>
+                </div>               
+            </div>
+        </div>
+
+    </div>
+</section>

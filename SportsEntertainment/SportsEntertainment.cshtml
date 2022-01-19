@@ -1,0 +1,133 @@
+﻿@{
+    ViewBag.Title = "Sports and Entertainment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+<style>
+    .btn {
+        width: auto;
+        height: 40%;
+        background: #47b2e4;
+        border-radius: 50px;
+    }      
+    .btn:hover {
+        background: #209dd8;
+    }
+    .bd
+    {       
+        font-family: 'Poppins', sans-sherif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        overflow: hidden;
+    }    
+    .ticker {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 60px;
+        margin: 0 auto;
+    }
+
+    .news {
+        width: 76%;
+        background: #cc4444;
+        padding: 0 2%;
+    }
+
+    .title {
+        width: 20%;
+        text-align: center;
+        background: #c81c1c;
+        position: relative;
+    }
+
+        .title:after {
+            position: absolute;
+            content: "";
+            right: -16%;
+            border-left: 20px solid #c81c1c;
+            border-top: 33px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 33px solid transparent;
+            top: 0;
+        }
+
+        .title a:hover {
+            color: #ed8a8a;
+        }
+
+    .news marquee {
+        font-size: 18px;
+    }
+    
+    .features {
+        color: #37517e;
+    }
+    .bg{
+        background: #06FF00;
+    }
+        .bg:hover {
+            background: #49FF00;
+        }
+    .home-box {
+        margin: 10px;
+        background-color: #47b2e4;
+        color: white;
+        margin-top: 55px;
+        border-radius: 10px;
+    }
+
+</style>
+<
+<section class="bd">
+    <div class="container">
+        <div class="ticker">
+            <div class="title pt-3"><h4><a href="Results">Results</a></h4></div>
+            <div class="news pt-3">
+                <marquee class="text-center" behavior="" direction="">
+                    result announcement result announcement result announcement result announcement result announcement result announcement .
+                </marquee>
+            </div>
+        </div>
+    </div>
+</section>
+          
+        <div class="section-title">
+            <h2>ONGOING CONTESTS</h2>        
+        </div>          
+
+<div class="card-deck text-center mx-2">
+    <div class="card m-1 section-bg">
+        <img class="card-img-top img-responsive" src="https://exploredprk.com/wp-content/uploads/2016/11/multi_photo_2016-11-05_dn12087_image5.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h2 class="features text-center p-1">Content 1</h2>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="button text-center">
+                <a href="ContestDetails" class="btn text-white">Join Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="card m-1 section-bg">
+        <img class="card-img-top img-responsive" src="https://exploredprk.com/wp-content/uploads/2016/11/multi_photo_2016-11-05_dn12087_image5.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h2 class="features text-center p-1">Content 2</h2>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="button text-center">
+                <a href="ContestDetails" class="btn text-white">Join Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="card m-1 section-bg">
+        <img class="card-img-top img-responsive" src="https://exploredprk.com/wp-content/uploads/2016/11/multi_photo_2016-11-05_dn12087_image5.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h2 class="features text-center p-1">Content 3</h2>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="button text-center">
+                <a href="ContestDetails" class="btn text-white">Join Now</a>
+            </div>
+        </div>
+    </div>    
+</div>
