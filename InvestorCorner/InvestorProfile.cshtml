@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "CreateProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="contact" class="contact">
+
+    <div class="section-title pt-5">
+        <h2>Create Profile For Investors</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Full Name</strong> </label>
+                            <input type="text" name="name" class="form-control" id="name" required="" placeholder='Full Name'>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Email</strong> </label>
+                            <input type="email" name="name" class="form-control" id="name" required="" placeholder='Email address'>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Age</strong> </label>
+                            <input type="number" name="name" class="form-control" id="name" required="" placeholder='Age'>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>Experience</strong> </label>
+                            <input type="number" name="name" class="form-control" id="name" required="" placeholder=''>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1"><strong>Select Your Investor Type</strong></label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Please Select</option>
+                                <option>Individual Investor</option>
+                                <option>Discretionary</option>
+                                <option>Financial Professional</option>
+                                <option>Institutional</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="name"><strong>DESIRED LOCATION</strong></label>
+                            <input type="" class="form-control" name="location" id="location" required="" placeholder="Enter location">
+                        </div>
+                    </div>
+
+                    <div><button type="submit">SUBMIT</a> </button></div>
+                </form>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</section>
