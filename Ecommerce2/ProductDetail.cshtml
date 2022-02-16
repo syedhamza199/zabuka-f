@@ -1,0 +1,330 @@
+﻿@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ProductInformation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .product-title {
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            position: relative;
+            color: #12263a;
+            margin-bottom: 10px;
+        }
+
+        .product-link {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            background: #256eff;
+            color: #fff;
+            padding: 0 0.3rem;
+            transition: all 0.5s ease;
+        }
+
+            .product-link:hover {
+                opacity: 0.9;
+            }
+
+        .product-rating {
+            color: black;
+        }
+
+            .product-rating span {
+                font-weight: 600;
+                color: #252525;
+            }
+
+        .checked {
+            color: #ffc107;
+        }
+
+        .product-price {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+            .product-price span {
+                font-weight: 400;
+            }
+
+        .last-price span {
+            color: #f64749;
+            text-decoration: line-through;
+        }
+
+        .new-price span {
+            color: #256eff;
+        }
+
+        .product-detail h2 {
+            text-transform: capitalize;
+            color: #12263a;
+        }
+
+        .product-detail p {
+            font-size: 0.7rem;
+        }
+
+
+        .purchase-info {
+            margin: 10px 0;
+        }
+
+            .purchase-info input {
+                border: 1.5px solid #ccc;
+                font-weight: bold;
+                height: 33px;
+                width: 55px;
+                text-align: center;
+            }
+
+
+            .purchase-info .btn {
+                cursor: pointer;
+                border-radius: 20px;
+                background-color: #256eff;
+                color: #fff;
+            }
+
+
+
+                .purchase-info .btn:hover {
+                    opacity: 0.9;
+                }
+    </style>
+</head>
+<body>
+    <div style="margin-top: 100px"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-md-4">
+                <div class="single-product mb-5">
+                    <div class="product-img">
+                        <a href="#">
+                            <img class="default-img" src="/Assets/images/p1.jpg" alt="#">
+                            <img class="hover-img" src="/Assets/images/p2.jpg" alt="#">
+                        </a>
+                        <div class="button-head">
+                            <div class="product-action">
+                                <a data-toggle="modal" data-target="#exampleModal"
+                                   title="Quick View" href="#">
+                                    <i class=" ti-eye"></i><span>Quick Shop</span>
+                                </a>
+                                <a title="Wishlist" href="#">
+                                    <i class=" ti-heart "></i><span>
+                                        Add to
+                                        Wishlist
+                                    </span>
+                                </a>
+                                <a title="Compare" href="#">
+                                    <i class="ti-bar-chart-alt"></i><span>
+                                        Add to
+                                        Compare
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="product-action-2">
+                                <a title="Add to cart" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-5">
+                <div class="product-content">
+                    <h2 class="product-title">Women Hot Collection</h2>
+
+                    <a href="#" class="product-link">Visit Our Store</a>
+
+                    <div class="product-rating">
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        <span>4.7(21)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <p class="last-price">Old Price: <span>$257.00</span></p>
+                        <p class="new-price">New Price: <span>$249.00 (5%)</span></p>
+                    </div>
+
+                    <div class="product-detail">
+                        <h2>about this item: </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+
+                        <p><b>Availability:</b> In Stock</p>
+                        <p><b>Category:</b> Shirts</p>
+                        <p><b>Color:</b> White</p>
+                        <p><b>Shipping Area:</b> All over the world</p>
+                        <p><b>Shipping Fee:</b> Free</p>
+                    </div>
+
+                    <div class="purchase-info">
+                        <label class="mr-1">Quantity:</label>
+                        <input class="mr-2" type="number" min="0" value="1">
+                        <button type="button" class="btn">
+                            Add to Cart <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h2 class="mb-0 text-center">Featured Products</h2>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="#">
+                                <img class="default-img" src="/Assets/images/p1.jpg" alt="#">
+                                <img class="hover-img" src="/Assets/images/p2.jpg" alt="#">
+                            </a>
+                            <div class="button-head">
+                                <div class="product-action">
+                                    <a data-toggle="modal" data-target="#exampleModal"
+                                       title="Quick View" href="#">
+                                        <i class=" ti-eye"></i><span>Quick Shop</span>
+                                    </a>
+                                    <a title="Wishlist" href="#">
+                                        <i class=" ti-heart "></i><span>
+                                            Add to
+                                            Wishlist
+                                        </span>
+                                    </a>
+                                    <a title="Compare" href="#">
+                                        <i class="ti-bar-chart-alt"></i><span>
+                                            Add to
+                                            Compare
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="product-action-2">
+                                    <a title="Add to cart" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content mb-5">
+                            <h3><a href="/ECommerce/Product">Women Hot Collection</a></h3>
+                            <div class="product-price">
+                                <span>$29.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="#">
+                                <img class="default-img" src="/Assets/images/p3.jpg" alt="#">
+                                <img class="hover-img" src="/Assets/images/p4.jpg" alt="#">
+                            </a>
+                            <div class="button-head">
+                                <div class="product-action">
+                                    <a data-toggle="modal" data-target="#exampleModal"
+                                       title="Quick View" href="#">
+                                        <i class=" ti-eye"></i><span>Quick Shop</span>
+                                    </a>
+                                    <a title="Wishlist" href="#">
+                                        <i class=" ti-heart "></i><span>
+                                            Add to
+                                            Wishlist
+                                        </span>
+                                    </a>
+                                    <a title="Compare" href="#">
+                                        <i class="ti-bar-chart-alt"></i><span>
+                                            Add to
+                                            Compare
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="product-action-2">
+                                    <a title="Add to cart" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content mb-5">
+                            <h3><a href="#">Awesome Pink Show</a></h3>
+                            <div class="product-price">
+                                <span>$29.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="#">
+                                <img class="default-img" src="/Assets/images/p5.jpg" alt="#">
+                                <img class="hover-img" src="/Assets/images/p6.jpg" alt="#">
+                            </a>
+                            <div class="button-head">
+                                <div class="product-action">
+                                    <a data-toggle="modal" data-target="#exampleModal"
+                                       title="Quick View" href="#">
+                                        <i class=" ti-eye"></i><span>Quick Shop</span>
+                                    </a>
+                                    <a title="Wishlist" href="#">
+                                        <i class=" ti-heart "></i><span>
+                                            Add to
+                                            Wishlist
+                                        </span>
+                                    </a>
+                                    <a title="Compare" href="#">
+                                        <i class="ti-bar-chart-alt"></i><span>
+                                            Add to
+                                            Compare
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="product-action-2">
+                                    <a title="Add to cart" href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content mb-5">
+                            <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                            <div class="product-price">
+                                <span>$29.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <form>
+                    <h2 class="mb-3 text-center">Post Your Reviews</h2>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Review</label>
+                        <textarea type="text" class="form-control" id="exampleInputtextarea" placeholder="write your own reviews" rows="3"></textarea>
+                    </div>
+                    <div class="button mb-3">
+                        <a href="InvestorProfile" class="btn text-white" style="background-color: #47b2e4; border-radius: 20px;">Submit</a>
+                    </div>
+                </form>
+</body>
+</html>
